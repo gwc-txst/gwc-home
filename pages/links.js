@@ -5,7 +5,9 @@ export default function Links() {
     <div className="h-screen bg-gradient-to-tr from-[#B6FFDD] via-[#788DFF] to-[#FF94FF]">
       {/* Start header */}
       <div className="bg-black h-24 grid grid-cols-3 items-center">
-        <div className="text-white col-span-1 mx-6">Girls Who Code TXST</div>
+        <div className="text-white col-span-1 mx-6 font-babe-sans sm:text-2xl text-lg">
+          Girls Who Code TXST
+        </div>
         <div className="flex space-x-6 col-span-2 justify-end mx-6">
           <div className="text-white">Home</div>
           <div className="text-white">Donate</div>
