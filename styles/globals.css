@@ -5,5 +5,25 @@
 @font-face {
   font-family: "babesans";
   src: url("../public/fonts/BabeSansRegular.woff");
-  font-style: regular;
+  font-weight: regular;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../public/fonts/Inter/Inter-Black.woff2");
+  font-weight: black;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../public/fonts/Inter/Inter-Bold.woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../public/fonts/Inter/Inter-Regular.woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../public/fonts/Inter/Inter-Light.woff2");
+  font-weight: light;
 }
