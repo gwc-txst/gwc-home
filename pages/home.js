@@ -14,7 +14,6 @@ export default function Home() {
       <FeatureDuo />
       {/* Donate CTA */}
       <FeatureCTA />
-
       {/* Footer */}
       <Footer />
     </div>
