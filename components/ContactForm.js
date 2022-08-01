@@ -17,8 +17,8 @@ export default function ContactForm() {
               Let's work together
             </h2>
             <p className="mt-4 text-lg text-gray-500 sm:mt-3">
-              We’d love to hear from you! Send us a message using the form
-              opposite, or email us. We’d love to hear from you! Send us a
+              We&apos;d love to hear from you! Send us a message using the form
+              opposite, or email us. We&apos;d love to hear from you! Send us a
               message using the form opposite, or email us.
             </p>
             <form
@@ -175,7 +175,7 @@ export default function ContactForm() {
                     />
                     <label htmlFor="budget-25k-50k" className="ml-3">
                       <span className="block text-sm text-gray-700">
-                        $25K – $50K
+                        $25K - $50K
                       </span>
                     </label>
                   </div>
@@ -189,7 +189,7 @@ export default function ContactForm() {
                     />
                     <label htmlFor="budget-50k-100k" className="ml-3">
                       <span className="block text-sm text-gray-700">
-                        $50K – $100K
+                        $50K - $100K
                       </span>
                     </label>
                   </div>
