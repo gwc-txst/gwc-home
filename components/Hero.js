@@ -2,19 +2,10 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import NAVIGATION from "../constants/constant";
+import { NAVIGATION } from "../constants/constant";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../public/logo-dark.png";
-
-const navigation = [
-  { name: "Home", href: "/" },
-  { name: "Donate", href: "/donate" },
-  { name: "Resources", href: "/resources" },
-  { name: "Links", href: "/links" },
-  { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
-];
 
 export default function Hero() {
   return (
@@ -58,11 +49,11 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8 whitespace-nowrap">
-                  {navigation.map((item) => (
+                  {NAVIGATION.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="font-medium text-gray-500 hover:text-gray-900"
+                      className={` ${item.additionalFormatting} font-medium hover:text-gray-900`}
                     >
                       {item.name}
                     </a>
@@ -106,7 +97,7 @@ export default function Hero() {
                     </div>
                   </div>
                   <div className="px-2 pt-2 pb-3 space-y-1">
-                    {navigation.map((item) => (
+                    {NAVIGATION.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}

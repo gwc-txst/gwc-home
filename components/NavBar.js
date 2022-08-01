@@ -6,15 +6,6 @@ import logo from "../public/logo-dark.png";
 import Image from "next/image";
 import { NAVIGATION } from "../constants/constant";
 
-// const navigation = [
-//   { name: "Home", href: "/" },
-//   { name: "Donate", href: "/donate" },
-//   { name: "Resources", href: "/resources" },
-//   { name: "Links", href: "/links" },
-//   { name: "About", href: "/about" },
-//   { name: "Contact", href: "/contact" },
-// ];
-
 export default function NavBar() {
   return (
     <div className="relative">
@@ -51,7 +42,7 @@ export default function NavBar() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="font-medium text-gray-700 hover:text-black"
+                      className={`${item.additionalFormatting} font-medium hover:text-black`}
                     >
                       {item.name}
                     </a>

@@ -1,17 +1,22 @@
-import Checkout from "../components/Checkout";
 import Footer from "../components/Footer";
-import HeaderDropdown from "../components/HeaderDropdown";
 import NavBar from "../components/NavBar";
-import ShopOptions from "../components/ShopOptions";
+import DonateOptions from "../components/DonateOptions";
+import { useState } from "react";
+import AlertBar from "../components/AlertBar";
 
 export default function Donate() {
+  const [loading, setLoading] = useState(false);
+
   return (
     <div>
       <NavBar />
-      {/* <HeaderDropdown /> */}
-      <ShopOptions />
-      <Checkout />
+      <DonateOptions setLoading={setLoading} />
       <Footer />
+      {loading && (
+        <div className=" sm:top-16 z-30 inset-x-0 flex justify-center fixed bottom-12">
+          <AlertBar />
+        </div>
+      )}
     </div>
   );
 }

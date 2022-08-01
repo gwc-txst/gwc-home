@@ -4,70 +4,11 @@ import { useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
 import { useRouter } from "next/router";
+import { TIERS } from "../constants/constant";
 
-const tiers = [
-  {
-    name: "Hobby",
-    href: "#",
-    price: 12,
-    description: "All the basics for starting a new business",
-    includedFeatures: [
-      "Potenti felis, in cras at at ligula nunc.",
-      "Orci neque eget pellentesque.",
-    ],
-  },
-  {
-    name: "Freelancer",
-    href: "#",
-    price: 24,
-    description: "All the basics for starting a new business",
-    includedFeatures: [
-      "Potenti felis, in cras at at ligula nunc. ",
-      "Orci neque eget pellentesque.",
-      "Donec mauris sit in eu tincidunt etiam.",
-    ],
-  },
-  {
-    name: "Startup",
-    href: "#",
-    price: 32,
-    description: "All the basics for starting a new business",
-    includedFeatures: [
-      "Potenti felis, in cras at at ligula nunc. ",
-      "Orci neque eget pellentesque.",
-      "Donec mauris sit in eu tincidunt etiam.",
-      "Faucibus volutpat magna.",
-    ],
-  },
-  {
-    name: "Enterprise",
-    href: "#",
-    price: 48,
-    description: "All the basics for starting a new business",
-    includedFeatures: [
-      "Potenti felis, in cras at at ligula nunc. ",
-      "Orci neque eget pellentesque.",
-      "Donec mauris sit in eu tincidunt etiam.",
-      "Faucibus volutpat magna.",
-      "Id sed tellus in varius quisque.",
-      "Risus egestas faucibus.",
-      "Risus cursus ullamcorper.",
-    ],
-  },
-];
-
-export default function ShopOptions() {
+export default function DonateOptions({ setLoading }) {
   const router = useRouter();
   const { status } = router.query;
-
-  const [loading, setLoading] = useState(false);
-  const [item, setItem] = useState({
-    name: "",
-    description: "",
-    image: "",
-    quantity: 0,
-    price: 0,
-  });
   const publishableKey = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
   const stripePromise = loadStripe(publishableKey);
 
@@ -78,7 +19,7 @@ export default function ShopOptions() {
     delete checkoutItem.description;
     delete checkoutItem.includedFeatures;
     checkoutItem.image =
-      "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80";
+      "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80";
     checkoutItem.quantity = 1;
     const stripe = await stripePromise;
     const checkoutSession = await axios.post("/api/create-stripe-session", {
@@ -92,7 +33,6 @@ export default function ShopOptions() {
     }
     setLoading(false);
   };
-
   return (
     <div className="bg-white">
       {status && status === "success" && (
@@ -116,7 +56,7 @@ export default function ShopOptions() {
           </p>
         </div>
         <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
-          {tiers.map((tier) => (
+          {TIERS.map((tier) => (
             <div
               key={tier.name}
               className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200"
