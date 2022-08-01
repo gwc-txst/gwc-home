@@ -2,14 +2,18 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import NAVIGATION from "../constants/constant";
+import Link from "next/link";
+import Image from "next/image";
+import logo from "../public/logo-dark.png";
 
 const navigation = [
-  { name: "Home", href: "#" },
-  { name: "Resources", href: "#" },
-  //   { name: "Become a member", href: "#" },
-  { name: "Links", href: "#" },
-  { name: "Our Team", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "Donate", href: "/donate" },
+  { name: "Resources", href: "/resources" },
+  { name: "Links", href: "/links" },
+  { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Hero() {
@@ -35,12 +39,14 @@ export default function Hero() {
               >
                 <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                   <div className="flex items-center justify-between w-full md:w-auto">
-                    <a href="#">
+                    <a className="mt-2" href="/">
                       <span className="sr-only">Workflow</span>
-                      <img
-                        alt="Workflow"
-                        className="h-8 w-auto sm:h-10"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                      <Image
+                        alt="GWC logo"
+                        className=""
+                        src={logo}
+                        width={110}
+                        height={55}
                       />
                     </a>
                     <div className="-mr-2 flex items-center md:hidden">
@@ -51,7 +57,7 @@ export default function Hero() {
                     </div>
                   </div>
                 </div>
-                <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+                <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8 whitespace-nowrap">
                   {navigation.map((item) => (
                     <a
                       key={item.name}
@@ -81,11 +87,16 @@ export default function Hero() {
                 <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div className="px-5 pt-4 flex items-center justify-between">
                     <div>
-                      <img
-                        className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                        alt=""
-                      />
+                      <a className="mt-2" href="/">
+                        <span className="sr-only">Workflow</span>
+                        <Image
+                          alt="GWC logo"
+                          className=""
+                          src={logo}
+                          width={110}
+                          height={55}
+                        />
+                      </a>
                     </div>
                     <div className="-mr-2">
                       <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">

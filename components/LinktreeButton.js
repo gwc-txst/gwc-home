@@ -1,9 +1,9 @@
 const LinktreeButton = ({ label }) => {
   return (
     <div
-      className="bg-blue-100 
-      text-center w-2/3 py-6 rounded-full 
-      hover:bg-blue-200 active:bg-blue-300
+      className="bg-gwc-blue-lighter text-xl 
+      text-center lg:w-1/2 w-11/12 sm:w-4/5 py-8 rounded-full 
+      hover:bg-gwc-pink-light active:bg-blue-300
       cursor-pointer"
     >
       {label}

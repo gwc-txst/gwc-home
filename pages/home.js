@@ -10,10 +10,10 @@ export default function Home() {
       <Hero />
       {/* Philosophy */}
       <FeatureFour />
-      {/* Become a member */}
-      <FeatureDuo />
       {/* Donate CTA */}
       <FeatureCTA />
+      {/* Double Feature Section */}
+      <FeatureDuo />
       {/* Footer */}
       <Footer />
     </div>

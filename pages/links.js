@@ -1,35 +1,36 @@
+import Footer from "../components/Footer";
+import HeaderSimple from "../components/HeaderSimple";
 import LinktreeButton from "../components/LinktreeButton";
 import MenuButton from "../components/MenuButton";
+import NavBar from "../components/NavBar";
+
+const links = [
+  { name: "Canvas", href: "#" },
+  { name: "Etsy", href: "#" },
+  { name: "GroupMe", href: "#" },
+  { name: "Discord", href: "#" },
+  { name: "Instagram", href: "#" },
+  { name: "LinkedIn", href: "#" },
+  { name: "Twitter", href: "#" },
+  { name: "Github", href: "#" },
+];
 
 export default function Links() {
   return (
-    <div className="h-screen bg-gradient-to-tr from-[#B6FFDD] via-[#788DFF] to-[#FF94FF]">
-      {/* Start menu */}
-      <div className="bg-black h-24 grid grid-cols-3 items-center">
-        <div className="text-white col-span-1 mx-6 font-babe-sans sm:text-2xl text-lg cursor-pointer">
-          Girls Who Code TXST
-        </div>
-        <div className="flex space-x-6 col-span-2 justify-end mx-6">
-          <MenuButton label="Home" />
-          <MenuButton label="Donate" />
-          <MenuButton label="About" />
-          <MenuButton label="Links" />
-        </div>
-      </div>
+    <div className="h-screen bg-gradient-to-tr from-[#B6FFDD] via-[#788DFF] to-[#FF94FF] overflow-auto overscroll-contain">
+      <NavBar />
 
-      {/*  Start links */}
-      <div className="text-center text-2xl mt-12 cursor-default">
-        Here are our links!
+      <HeaderSimple
+        headline="Headline"
+        title="Our Links"
+        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit assumenda expedita quidem sint, dicta molestias quod voluptatum possimus quae dolor praesentium nostrum dolorem repudiandae ipsum fuga explicabo dolores voluptates eum!"
+      />
+      <div className="flex flex-col items-center space-y-12 pb-16">
+        {links.map((item) => (
+          <LinktreeButton key={item.name} label={item.name} href={item.href} />
+        ))}
       </div>
-
-      <div className="flex flex-col items-center space-y-8 mt-12">
-        <LinktreeButton label="Check out our Canvas page!" />
-        <LinktreeButton label="Join the Discord here!" />
-        <LinktreeButton />
-        <LinktreeButton />
-        <LinktreeButton />
-        <LinktreeButton />
-      </div>
+      <Footer />
     </div>
   );
 }
