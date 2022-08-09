@@ -1,12 +1,17 @@
+import Image from "next/image";
+import workstation from "../public/workstation.jpeg";
+
 export default function ContactForm() {
   return (
     <div className="relative bg-white">
       <div className="lg:absolute lg:inset-0">
-        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img
-            className="h-56 w-full object-cover lg:absolute lg:h-full"
-            src="https://images.unsplash.com/photo-1597239450996-ea7c2c564412?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-            alt=""
+        <div className="relative  lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 h-56 w-full object-cover lg:h-full">
+          <Image
+            src={workstation}
+            alt="workstation"
+            layout="fill"
+            objectFit="cover"
+            quality={100}
           />
         </div>
       </div>
@@ -14,12 +19,12 @@ export default function ContactForm() {
         <div className="lg:pr-8">
           <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-              Let's work together
+              Let&apos;s work together
             </h2>
             <p className="mt-4 text-lg text-gray-500 sm:mt-3">
               We&apos;d love to hear from you! Send us a message using the form
               opposite, or email us. We&apos;d love to hear from you! Send us a
-              message using the form opposite, or email us.
+              message using the form below, or email us.
             </p>
             <form
               action="#"

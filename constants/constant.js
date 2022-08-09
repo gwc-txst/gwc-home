@@ -1,3 +1,5 @@
+import victoria from "../public/victoria.png";
+
 export const NAVIGATION = [
   { name: "Home", href: "/", additionalFormatting: "text-gray-700" },
   {
@@ -11,7 +13,7 @@ export const NAVIGATION = [
   //     additionalFormatting: "text-gray-700",
   //   },
   { name: "Links", href: "/links", additionalFormatting: "text-gray-700" },
-  { name: "About", href: "/about", additionalFormatting: "text-gray-700" },
+  //   { name: "About", href: "/about", additionalFormatting: "text-gray-700" },
   { name: "Contact", href: "/contact", additionalFormatting: "text-gray-700" },
 ];
 
@@ -64,4 +66,56 @@ export const TIERS = [
       "Risus cursus ullamcorper.",
     ],
   },
+];
+
+export const TEAM_MEMBERS = [
+  {
+    name: "Lindsay Walton",
+    role: "Front-end Developer",
+    imageUrl:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Lindsay Walton",
+    role: "Front-end Developer",
+    imageUrl:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Lindsay Walton",
+    role: "Front-end Developer",
+    imageUrl:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Lindsay Walton",
+    role: "Front-end Developer",
+    imageUrl:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Lindsay Walton",
+    role: "Front-end Developer",
+    imageUrl:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Lindsay Walton",
+    role: "Front-end Developer",
+    imageUrl:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    twitterUrl: "#",
+    linkedinUrl: "#",
+  },
+  // More people...
 ];

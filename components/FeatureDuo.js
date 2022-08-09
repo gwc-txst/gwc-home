@@ -1,12 +1,14 @@
-/* This example requires Tailwind CSS v2.0+ */
 import { InboxIcon, SparklesIcon } from "@heroicons/react/outline";
+import Image from "next/image";
+import gwcParent from "../public/gwc-parent.png";
+import txst from "../public/txst.jpeg";
 
 export default function FeatureDuo() {
   return (
     <div className="relative bg-gradient-to-br from-[#B6FFDD] via-[#788DFF] to-[#FF94FF] pt-16 pb-32 overflow-hidden">
       <div className="relative">
-        <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
+        <div className="lg:mx-auto lg:max-w-9xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-12">
             <div>
               <div>
                 <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gwc-blue-deep">
@@ -47,11 +49,14 @@ export default function FeatureDuo() {
                 </div>
                 <footer className="mt-3">
                   <div className="flex items-center space-x-3">
-                    <div className="flex-shrink-0">
-                      <img
-                        className="h-6 w-6 rounded-full"
-                        src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-                        alt=""
+                    <div className="flex-shrink-0 h-6 w-6 rounded-full relative">
+                      <Image
+                        src={txst}
+                        alt="workstation"
+                        layout="fill"
+                        // objectFit="cover"
+                        quality={100}
+                        className="rounded-full"
                       />
                     </div>
                     <div className="text-base font-medium text-gray-700">
@@ -63,19 +68,25 @@ export default function FeatureDuo() {
             </div>
           </div>
           <div className="mt-12 sm:mt-16 lg:mt-0">
-            <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-              <img
-                className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                src="https://tailwindui.com/img/component-images/inbox-app-screenshot-1.jpg"
-                alt="Inbox user interface"
-              />
+            <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 relative lg:h-full">
+              <div className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 relative lg:left-0 lg:h-full lg:w-auto lg:max-w-none">
+                <Image
+                  src={txst}
+                  alt="txst"
+                  layout="fill"
+                  // width="1920"
+                  // height="1080"
+                  quality={100}
+                  className="rounded-xl object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div className="mt-24">
-        <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
+        <div className="lg:mx-auto lg:max-w-9xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-12 lg:col-start-2">
             <div>
               <div>
                 <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gwc-blue-deep">
@@ -108,11 +119,17 @@ export default function FeatureDuo() {
           </div>
           <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
             <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-              <img
-                className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                src="https://tailwindui.com/img/component-images/inbox-app-screenshot-2.jpg"
-                alt="Customer profile user interface"
-              />
+              <div className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 relative lg:right-0 lg:h-full lg:w-auto lg:max-w-none">
+                <Image
+                  src={gwcParent}
+                  alt="girls who code logo"
+                  layout="fill"
+                  // width="1920"
+                  // height="1080"
+                  quality={100}
+                  className="rounded-xl object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>

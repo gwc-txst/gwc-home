@@ -6,6 +6,7 @@ import { NAVIGATION } from "../constants/constant";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../public/logo-dark.png";
+import brightDesk from "../public/bright-desk.jpeg";
 
 export default function Hero() {
   return (
@@ -148,11 +149,21 @@ export default function Hero() {
         </div>
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-3/4 bg-blue-100">
-        <img
-          className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-          src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-          alt=""
-        />
+        <picture>
+          <img
+            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+            src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt=""
+          />
+        </picture>
+        {/* <Image
+          src={brightDesk}
+          alt="bright organized desk"
+          width="6000"
+          height="4000"
+          quality={100}
+          className="rounded-xl object-scale-down"
+        /> */}
       </div>
     </div>
   );
