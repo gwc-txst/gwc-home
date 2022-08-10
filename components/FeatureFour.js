@@ -9,26 +9,23 @@ import {
 const features = [
   {
     name: "Inclusivity",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+    description: "All genders, learners, and supporters are welcome",
     icon: GlobeAltIcon,
   },
   {
     name: "Community",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "We will create a safe space for everyone to learn how to code",
     icon: ScaleIcon,
   },
   {
     name: "Beginner Friendly",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+    description: "Our main focus is strengthen your foundational skills",
     icon: LightningBoltIcon,
   },
   {
     name: "Interview and Career Prep",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+    description: "Preparing you for interviews so you can nail your dream job",
     icon: AnnotationIcon,
   },
 ];
@@ -45,8 +42,8 @@ export default function FeatureFour() {
             Our Philosophy
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-            voluptatum cupiditate veritatis in accusamus quisquam.
+            Empowering female and non-binary students to close the gender gap in
+            tech
           </p>
         </div>
 

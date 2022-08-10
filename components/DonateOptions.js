@@ -51,8 +51,8 @@ export default function DonateOptions({ setLoading }) {
             Donate Today
           </h1>
           <p className="mt-5 text-xl text-gray-500 sm:text-center">
-            Start building for free, then add a site plan to go live. Account
-            plans unlock additional features.
+            Every dollar goes directly to our students. Food, prizes for
+            competitions, workshop materials, event materials
           </p>
         </div>
         <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">

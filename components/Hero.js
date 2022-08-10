@@ -80,7 +80,7 @@ export default function Hero() {
                   <div className="px-5 pt-4 flex items-center justify-between">
                     <div>
                       <a className="mt-2" href="/">
-                        <span className="sr-only">Workflow</span>
+                        <span className="sr-only">Logo</span>
                         <Image
                           alt="GWC logo"
                           className=""
@@ -122,26 +122,29 @@ export default function Hero() {
                 <span className="block text-black xl:inline">TXST</span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat aliqua.
+                A club supporting women and non-binary students from all majors
+                who want to learn how to code. We&apos;re open to all genders.
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <a
-                    href="#"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gwc-blue-deep hover:bg-gwc-blue-deeper md:py-4 md:text-lg md:px-10"
-                  >
-                    Donate
-                  </a>
+                  <Link href="/donate" passHref>
+                    <a
+                      href="/donate"
+                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gwc-blue-deep hover:bg-gwc-blue-deeper md:py-4 md:text-lg md:px-10"
+                    >
+                      Donate
+                    </a>
+                  </Link>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <a
-                    href="#"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-gwc-blue-deep bg-gwc-blue-lightest hover:bg-gwc-blue-lighter md:py-4 md:text-lg md:px-10"
-                  >
-                    View upcoming events
-                  </a>
+                  <Link href="/donate" passHref>
+                    <a
+                      href="#"
+                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-gwc-blue-deep bg-gwc-blue-lightest hover:bg-gwc-blue-lighter md:py-4 md:text-lg md:px-10"
+                    >
+                      View upcoming events on Canvas
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

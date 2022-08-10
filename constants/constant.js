@@ -17,6 +17,17 @@ export const NAVIGATION = [
   { name: "Contact", href: "/contact", additionalFormatting: "text-gray-700" },
 ];
 
+export const LINKS = [
+  { name: "Canvas", href: "#" },
+  //   { name: "Etsy", href: "#" },
+  { name: "Discord", href: "#" },
+  { name: "GroupMe", href: "#" },
+  { name: "Instagram", href: "#" },
+  { name: "LinkedIn", href: "#" },
+  //   { name: "Twitter", href: "#" },
+  { name: "Github", href: "#" },
+];
+
 export const TIERS = [
   {
     name: "Hobby",
