@@ -1,10 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
+import gradient from "../public/gradient.jpeg";
 
-export default function Error() {
+export default function Custom404() {
   return (
     <>
       <div className="min-h-full pt-16 pb-12 flex flex-col bg-white">
-        <main className="flex-grow flex flex-col justify-center max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
+        <main className="flex-grow flex flex-col justify-center max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 z-20">
           <div className="py-16">
             <div className="text-center">
               <p className="text-sm font-semibold text-indigo-600 uppercase tracking-wide">
@@ -17,16 +19,16 @@ export default function Error() {
                 Sorry, we couldn&apos;t find the page you&apos;re looking for.
               </p>
               <div className="mt-6">
-                <a
-                  href="#"
-                  className="text-base font-medium text-indigo-600 hover:text-indigo-500"
-                >
-                  Go back home<span aria-hidden="true"> &rarr;</span>
-                </a>
+                <Link href="/">
+                  <div className="text-base font-medium text-indigo-600 hover:text-indigo-500">
+                    Go back home<span aria-hidden="true"> &rarr;</span>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
         </main>
+        <Image src={gradient} layout="fill" className="z-10" />
       </div>
     </>
   );

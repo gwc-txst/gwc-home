@@ -13,6 +13,14 @@ const nextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return [
+      {
+        source: "/join",
+        destination: "https://canvas.txstate.edu/enroll/W6N879",
+      },
+    ];
+  },
   experimental: {
     images: {
       allowFutureImage: true,

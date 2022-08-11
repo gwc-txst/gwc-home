@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function FeatureCTA() {
   return (
     <div className="bg-gwc-blue-deeper">
@@ -6,13 +8,11 @@ export default function FeatureCTA() {
           <span className="block">Help us close the gender gap in tech.</span>
           <span className="block">Make a donation.</span>
         </h2>
-
-        <a
-          href="/donate"
-          className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-lg font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 sm:w-auto"
-        >
-          Donate
-        </a>
+        <Link href="/donate">
+          <div className="cursor-pointer mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-lg font-medium rounded-md text-gwc-blue-deeper bg-white hover:bg-gwc-pink-deep hover:text-white sm:w-auto">
+            Donate
+          </div>
+        </Link>
       </div>
     </div>
   );
