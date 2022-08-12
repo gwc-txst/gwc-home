@@ -16,8 +16,28 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: "/join",
+        source: "/canvas",
         destination: "https://canvas.txstate.edu/enroll/W6N879",
+      },
+      {
+        source: "/discord",
+        destination: "https://discord.gg/BtwA8NwtmZ",
+      },
+      {
+        source: "/groupme",
+        destination: "https://groupme.com/join_group/85823036/HFeHlaUN",
+      },
+      {
+        source: "/instagram",
+        destination: "https://www.instagram.com/girlswhocode.txst/",
+      },
+      {
+        source: "/linkedin",
+        destination: "https://www.linkedin.com/company/girls-who-code-txst/",
+      },
+      {
+        source: "/github",
+        destination: "https://github.com/gwc-txst",
       },
     ];
   },

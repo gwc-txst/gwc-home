@@ -18,64 +18,50 @@ export const NAVIGATION = [
 ];
 
 export const LINKS = [
-  { name: "Canvas", href: "#" },
+  { name: "Join our Canvas here!", href: "/canvas" },
   //   { name: "Etsy", href: "#" },
-  { name: "Discord", href: "#" },
-  { name: "GroupMe", href: "#" },
-  { name: "Instagram", href: "#" },
-  { name: "LinkedIn", href: "#" },
+  { name: "Get connected on Discord", href: "/discord" },
+  { name: "Join the GroupMe chat", href: "/groupme" },
+  { name: "Follow us on Instagram", href: "/instagram" },
+  { name: "Check out our LinkedIn", href: "/linkedin" },
   //   { name: "Twitter", href: "#" },
-  { name: "Github", href: "#" },
+  { name: "Github", href: "/github" },
 ];
 
 export const TIERS = [
   {
-    name: "Hobby",
-    href: "#",
-    price: 12,
-    description: "All the basics for starting a new business",
+    name: "Snacks",
+    price: 20,
+    description: "Snacks and drinks for general meetings",
     includedFeatures: [
-      "Potenti felis, in cras at at ligula nunc.",
-      "Orci neque eget pellentesque.",
+      "Chips, crackers, and granola bars",
+      "Mini water bottles",
     ],
   },
   {
-    name: "Freelancer",
-    href: "#",
-    price: 24,
-    description: "All the basics for starting a new business",
+    name: "Competition Prizes",
+    price: 50,
+    description: "GWC hosts hackathons and design competitions",
+    includedFeatures: ["Top 3 medals", "Portable water bottle", "Sweatshirt"],
+  },
+  {
+    name: "Dinner and a Meeting",
+    price: 100,
+    description:
+      "Students won't have to choose between dinner or attending an educational meeting",
     includedFeatures: [
-      "Potenti felis, in cras at at ligula nunc. ",
-      "Orci neque eget pellentesque.",
-      "Donec mauris sit in eu tincidunt etiam.",
+      "4 Pizzas",
+      "Vegan options",
+      "Beverages",
+      "Plates, napkins, and cutlery",
     ],
   },
   {
-    name: "Startup",
-    href: "#",
-    price: 32,
-    description: "All the basics for starting a new business",
-    includedFeatures: [
-      "Potenti felis, in cras at at ligula nunc. ",
-      "Orci neque eget pellentesque.",
-      "Donec mauris sit in eu tincidunt etiam.",
-      "Faucibus volutpat magna.",
-    ],
-  },
-  {
-    name: "Enterprise",
-    href: "#",
-    price: 48,
-    description: "All the basics for starting a new business",
-    includedFeatures: [
-      "Potenti felis, in cras at at ligula nunc. ",
-      "Orci neque eget pellentesque.",
-      "Donec mauris sit in eu tincidunt etiam.",
-      "Faucibus volutpat magna.",
-      "Id sed tellus in varius quisque.",
-      "Risus egestas faucibus.",
-      "Risus cursus ullamcorper.",
-    ],
+    name: "Sponsor a laptop for a student in need",
+    price: 250,
+    description:
+      "Many CS courses expect students to have laptops in class, but not all students can afford one",
+    includedFeatures: ["HP Chromebook 14 Inch HD Display Laptop"],
   },
 ];
 

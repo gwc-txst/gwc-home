@@ -1,5 +1,6 @@
 import Image from "next/image";
 import collab from "../public/collab.jpeg";
+import Link from "next/link";
 
 export default function ContactCTA() {
   return (
@@ -8,7 +9,7 @@ export default function ContactCTA() {
         className="hidden absolute top-0 inset-x-0 h-1/2 bg-gray-50 lg:block"
         aria-hidden="true"
       />
-      <div className="max-w-7xl mx-auto bg-indigo-600 lg:bg-transparent lg:px-8">
+      <div className="max-w-7xl mx-auto bg-gwc-blue lg:bg-transparent lg:px-8">
         <div className="lg:grid lg:grid-cols-12">
           <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
             <div
@@ -37,7 +38,7 @@ export default function ContactCTA() {
             </div>
           </div>
 
-          <div className="relative bg-indigo-600 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
+          <div className="relative bg-gwc-blue lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
             <div
               className="hidden absolute inset-0 overflow-hidden rounded-3xl lg:block"
               aria-hidden="true"
@@ -64,7 +65,7 @@ export default function ContactCTA() {
                       y={0}
                       width={4}
                       height={4}
-                      className="text-indigo-500"
+                      className="text-gwc-blue-deep"
                       fill="currentColor"
                     />
                   </pattern>
@@ -97,7 +98,7 @@ export default function ContactCTA() {
                       y={0}
                       width={4}
                       height={4}
-                      className="text-indigo-500"
+                      className="text-gwc-blue-deep"
                       fill="currentColor"
                     />
                   </pattern>
@@ -117,16 +118,17 @@ export default function ContactCTA() {
                 Let&apos;s collaborate!
               </h2>
               <p className="text-lg text-white">
-                Varius facilisi mauris sed sit. Non sed et duis dui leo,
-                vulputate id malesuada non. Cras aliquet purus dui laoreet diam
-                sed lacus, fames.
+                Please reach out if you have any questions, we would love to
+                answer them! Contact us at{"  "}
+                <span className="text-xl underline underline-offset-4">
+                  gwc.txst@gmail.com
+                </span>
               </p>
-              <a
-                className="block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-indigo-700 hover:bg-gray-50 sm:inline-block sm:w-auto"
-                href="#"
-              >
-                Explore open positions
-              </a>
+              <Link href="mailto:gwc.txst@gmail.com">
+                <div className="cursor-pointer block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-indigo-700 hover:bg-gray-50 sm:inline-block sm:w-auto">
+                  Email Us
+                </div>
+              </Link>
             </div>
           </div>
         </div>

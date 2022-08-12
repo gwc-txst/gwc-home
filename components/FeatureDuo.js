@@ -2,6 +2,7 @@ import { InboxIcon, SparklesIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 import gwcParent from "../public/gwc-parent.png";
 import txst from "../public/txst.jpeg";
+import Link from "next/link";
 
 export default function FeatureDuo() {
   return (
@@ -22,8 +23,14 @@ export default function FeatureDuo() {
                 <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
                   Become a member today!
                 </h2>
-                <p className="mt-4 text-lg text-gray-500">
-                  Free to join. Meetings every week. We’d love to have you!
+                <p className="mt-4 text-lg text-gray-700">
+                  Girls Who Code is absolutely free to join. Every Tuesday we
+                  host a CodeLounge, a place to come and hang out, chat, and
+                  create community.
+                </p>
+                <p className="mt-4 text-lg text-gray-700">
+                  Every other Wednesday we host an official meeting, which may
+                  be a workshop, guest speaker, or volunteer event.
                 </p>
                 <div className="mt-6">
                   <a
@@ -38,7 +45,7 @@ export default function FeatureDuo() {
             <div className="mt-8 border-t border-gray-200 pt-6">
               <blockquote>
                 <div>
-                  <p className="text-base text-gray-500">
+                  <p className="text-base text-gray-700">
                     &ldquo;Cras velit quis eros eget rhoncus lacus ultrices sed
                     diam. Sit orci risus aenean curabitur donec aliquet. Mi
                     venenatis in euismod ut.&rdquo;
@@ -56,7 +63,7 @@ export default function FeatureDuo() {
                         className="rounded-full"
                       />
                     </div>
-                    <div className="text-base font-medium text-gray-700">
+                    <div className="text-base font-medium text-gray-800">
                       Marcia Hill, Digital Marketing Manager
                     </div>
                   </div>
@@ -95,21 +102,18 @@ export default function FeatureDuo() {
               </div>
               <div className="mt-6">
                 <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-                  Check out our resources
+                  Check out our links
                 </h2>
-                <p className="mt-4 text-lg text-gray-500">
-                  Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
-                  bibendum malesuada faucibus lacinia porttitor. Pulvinar
-                  laoreet sagittis viverra duis. In venenatis sem arcu pretium
-                  pharetra at. Lectus viverra dui tellus ornare pharetra.
+                <p className="mt-4 text-lg text-gray-700">
+                  Ask for homework help on Discord, pick up a tshirt from our
+                  Etsy, or follow us on Insta. We have so much to offer!
                 </p>
                 <div className="mt-6">
-                  <a
-                    href="#"
-                    className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gwc-blue-deep hover:bg-gwc-blue-deeper"
-                  >
-                    Get started
-                  </a>
+                  <Link href="/links">
+                    <div className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gwc-blue-deep hover:bg-gwc-blue-deeper">
+                      Our links
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>

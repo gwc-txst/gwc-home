@@ -20,7 +20,7 @@ export default function Custom404() {
               </p>
               <div className="mt-6">
                 <Link href="/">
-                  <div className="text-base font-medium text-indigo-600 hover:text-indigo-500">
+                  <div className="cursor-pointer text-base font-medium text-indigo-600 hover:text-indigo-500">
                     Go back home<span aria-hidden="true"> &rarr;</span>
                   </div>
                 </Link>
@@ -28,7 +28,7 @@ export default function Custom404() {
             </div>
           </div>
         </main>
-        <Image src={gradient} layout="fill" className="z-10" />
+        <Image alt="gradient" src={gradient} layout="fill" className="z-10" />
       </div>
     </>
   );

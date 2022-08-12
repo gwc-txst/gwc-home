@@ -3,20 +3,21 @@ import HeaderSimple from "../components/HeaderSimple";
 import LinktreeButton from "../components/LinktreeButton";
 import NavBar from "../components/NavBar";
 import { LINKS } from "../constants/constant";
+import Link from "next/link";
 
 export default function Links() {
   return (
     <div className="h-screen bg-gradient-to-tr from-[#B6FFDD] via-[#788DFF] to-[#FF94FF] overflow-auto overscroll-contain">
       <NavBar />
 
-      <HeaderSimple
-        headline="Headline"
-        title="Our Links"
-        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit assumenda expedita quidem sint, dicta molestias quod voluptatum possimus quae dolor praesentium nostrum dolorem repudiandae ipsum fuga explicabo dolores voluptates eum!"
-      />
+      <HeaderSimple headline="Girls Who Code TXST" title="Our Links" />
       <div className="flex flex-col items-center space-y-12 pb-36">
         {LINKS.map((item) => (
-          <LinktreeButton key={item.name} label={item.name} href={item.href} />
+          <Link href={item.href} key={item.name}>
+            <div className="bg-gwc-blue-lighter text-xl text-center lg:w-1/2 w-11/12 sm:w-4/5 py-8 rounded-full hover:bg-gwc-pink-lighter active:bg-blue-300 cursor-pointer">
+              {item.name}
+            </div>
+          </Link>
         ))}
       </div>
       <Footer />

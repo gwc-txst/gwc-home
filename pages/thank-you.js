@@ -29,7 +29,7 @@ export default function ThankYou() {
             </div>
           </div>
         </main>
-        <Image src={gradient} layout="fill" className="z-10" />
+        <Image alt="gradient" src={gradient} layout="fill" className="z-10" />
       </div>
     </>
   );

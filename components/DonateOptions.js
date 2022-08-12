@@ -15,7 +15,6 @@ export default function DonateOptions({ setLoading }) {
   const createCheckOutSession = async (tier) => {
     setLoading(true);
     const checkoutItem = { ...tier };
-    delete checkoutItem.href;
     delete checkoutItem.description;
     delete checkoutItem.includedFeatures;
     checkoutItem.image =
@@ -50,6 +49,13 @@ export default function DonateOptions({ setLoading }) {
           <h1 className="text-7xl font-extrabold text-gray-900 sm:text-center">
             Donate Today
           </h1>
+
+          {/* <p className="mt-5 text-xl text-gray-500 sm:text-center">
+            Texas State is a Hispanic Serving Institution, meaning a large part
+            of our 60% female-identifying population are minorities.
+            Additionally, about half our students are first-generation, which
+            means they are navigating their educational journey independently.
+          </p> */}
           <p className="mt-5 text-xl text-gray-500 sm:text-center">
             Every dollar goes directly to our students. Food, prizes for
             competitions, workshop materials, event materials
@@ -69,9 +75,6 @@ export default function DonateOptions({ setLoading }) {
                 <p className="mt-8">
                   <span className="text-4xl font-extrabold text-gray-900">
                     ${tier.price}
-                  </span>{" "}
-                  <span className="text-base font-medium text-gray-500">
-                    once
                   </span>
                 </p>
 
@@ -81,7 +84,7 @@ export default function DonateOptions({ setLoading }) {
                   }}
                   className="mt-8 block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
                 >
-                  {`Buy ${tier.name}`}
+                  Donate
                 </button>
               </div>
               <div className="pt-6 pb-8 px-6">

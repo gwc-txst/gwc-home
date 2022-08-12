@@ -9,7 +9,8 @@ import {
 const features = [
   {
     name: "Inclusivity",
-    description: "All genders, learners, and supporters are welcome",
+    description:
+      "Students of all genders, skill levels, and majors are welcome",
     icon: GlobeAltIcon,
   },
   {
@@ -20,12 +21,14 @@ const features = [
   },
   {
     name: "Beginner Friendly",
-    description: "Our main focus is strengthen your foundational skills",
+    description:
+      "A place where beginners can seek help, and learn foundational skills",
     icon: LightningBoltIcon,
   },
   {
     name: "Interview and Career Prep",
-    description: "Preparing you for interviews so you can nail your dream job",
+    description:
+      "We will give you the tools and guidance to nail your dream job",
     icon: AnnotationIcon,
   },
 ];

@@ -9,7 +9,7 @@ export default function FeatureCTA() {
           <span className="block">Make a donation.</span>
         </h2>
         <Link href="/donate">
-          <div className="cursor-pointer mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-lg font-medium rounded-md text-gwc-blue-deeper bg-white hover:bg-gwc-pink-deep hover:text-white sm:w-auto">
+          <div className="cursor-pointer mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-xl font-medium rounded-md text-gwc-blue-deeper bg-white hover:bg-gwc-pink-deep hover:text-white sm:w-auto">
             Donate
           </div>
         </Link>
