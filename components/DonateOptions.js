@@ -33,7 +33,7 @@ export default function DonateOptions({ setLoading }) {
     setLoading(false);
   };
   return (
-    <div className="bg-white">
+    <div className="bg-gwc-blue-light">
       {status && status === "success" && (
         <div className="bg-green-100 text-green-700 p-2 rounded border mb-2 border-green-700">
           Payment Successful
@@ -56,7 +56,7 @@ export default function DonateOptions({ setLoading }) {
             Additionally, about half our students are first-generation, which
             means they are navigating their educational journey independently.
           </p> */}
-          <p className="mt-5 text-xl text-gray-500 sm:text-center">
+          <p className="mt-5 text-xl text-gray-700 sm:text-center">
             Every dollar goes directly to our students. Food, prizes for
             competitions, workshop materials, event materials
           </p>
@@ -65,7 +65,7 @@ export default function DonateOptions({ setLoading }) {
           {TIERS.map((tier) => (
             <div
               key={tier.name}
-              className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200"
+              className="bg-white border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200"
             >
               <div className="p-6">
                 <h2 className="text-lg leading-6 font-medium text-gray-900">

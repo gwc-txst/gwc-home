@@ -18,14 +18,14 @@ export const NAVIGATION = [
 ];
 
 export const LINKS = [
-  { name: "Join our Canvas here!", href: "/canvas" },
+  { name: "✨ 🎉 💕 Join our Canvas here! 💕 🎉 ✨", href: "/canvas" },
   //   { name: "Etsy", href: "#" },
   { name: "Get connected on Discord", href: "/discord" },
   { name: "Join the GroupMe chat", href: "/groupme" },
   { name: "Follow us on Instagram", href: "/instagram" },
-  { name: "Check out our LinkedIn", href: "/linkedin" },
+  { name: "Follow us on LinkedIn", href: "/linkedin" },
   //   { name: "Twitter", href: "#" },
-  { name: "Github", href: "/github" },
+  { name: "Check out our Github", href: "/github" },
 ];
 
 export const TIERS = [

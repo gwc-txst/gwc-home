@@ -33,12 +33,11 @@ export default function FeatureDuo() {
                   be a workshop, guest speaker, or volunteer event.
                 </p>
                 <div className="mt-6">
-                  <a
-                    href="#"
-                    className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gwc-blue-deep hover:bg-gwc-blue-deeper"
-                  >
-                    View our schedule on Canvas
-                  </a>
+                  <Link href="/canvas">
+                    <div className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gwc-blue-deep hover:bg-gwc-blue-deeper">
+                      Join our Canvas
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -64,7 +63,8 @@ export default function FeatureDuo() {
                       />
                     </div>
                     <div className="text-base font-medium text-gray-800">
-                      Marcia Hill, Digital Marketing Manager
+                      Stephen Smyth, President - TXST Google Developer Student
+                      Chapter
                     </div>
                   </div>
                 </footer>

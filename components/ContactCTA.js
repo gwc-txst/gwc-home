@@ -27,8 +27,6 @@ export default function ContactCTA() {
                   <Image
                     src={collab}
                     alt="txst"
-                    width="500"
-                    height="500"
                     layout="fill"
                     quality={75}
                     className="rounded-3xl object-cover"
