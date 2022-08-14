@@ -45,9 +45,9 @@ export default function FeatureDuo() {
               <blockquote>
                 <div>
                   <p className="text-base text-gray-700">
-                    &ldquo;Cras velit quis eros eget rhoncus lacus ultrices sed
-                    diam. Sit orci risus aenean curabitur donec aliquet. Mi
-                    venenatis in euismod ut.&rdquo;
+                    &ldquo;Girls Who Code has consistently created an
+                    environment full of friendly people, quality learning, and
+                    fun experiences.&rdquo;
                   </p>
                 </div>
                 <footer className="mt-3">
@@ -63,8 +63,8 @@ export default function FeatureDuo() {
                       />
                     </div>
                     <div className="text-base font-medium text-gray-800">
-                      Stephen Smyth, President - TXST Google Developer Student
-                      Chapter
+                      Stephen Smyth, President of Google Developer Student Club
+                      at TXST
                     </div>
                   </div>
                 </footer>
