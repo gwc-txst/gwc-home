@@ -2,6 +2,7 @@ import { InboxIcon, SparklesIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 import gwcParent from "../public/gwc-parent.png";
 import txst from "../public/txst.jpeg";
+import stephen from "../public/stephen.png";
 import Link from "next/link";
 
 export default function FeatureDuo() {
@@ -52,12 +53,11 @@ export default function FeatureDuo() {
                 </div>
                 <footer className="mt-3">
                   <div className="flex items-center space-x-3">
-                    <div className="flex-shrink-0 h-6 w-6 rounded-full relative">
+                    <div className="flex-shrink-0 h-10 w-10 rounded-full relative">
                       <Image
-                        src={txst}
+                        src={stephen}
                         alt="workstation"
                         layout="fill"
-                        // objectFit="cover"
                         quality={100}
                         className="rounded-full"
                       />
