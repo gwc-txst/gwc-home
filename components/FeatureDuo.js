@@ -45,7 +45,7 @@ export default function FeatureDuo() {
             <div className="mt-8 border-t border-gray-200 pt-6">
               <blockquote>
                 <div>
-                  <p className="text-base text-gray-700">
+                  <p className="text-base text-gray-800">
                     &ldquo;Girls Who Code has consistently created an
                     environment full of friendly people, quality learning, and
                     fun experiences.&rdquo;
